@@ -19,7 +19,6 @@ header {
 
   padding-inline: 1.6rem;
 
-  background: colors.$input-dark;
   .title {
     h1 {
       font-size: 1.4rem;
@@ -139,7 +138,20 @@ main {
   }
 }
 
-@mixin themeSwitch($theme-name, $theme, $cards, $input, $main) {
+@mixin themeSwitch($theme-name, $texts, $cards, $input, $main) {
+  .#{$theme-name} {
+    header {
+      background: $cards;
+      color: $texts;
+
+      .theme {
+        button {
+          background: $cards;
+          color: $texts;
+        }
+      }
+    }
+  }
 }
 
 @include themeSwitch(

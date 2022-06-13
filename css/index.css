@@ -64,7 +64,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-inline: 1.6rem;
-  background: #2b3945;
 }
 header .title h1 {
   font-size: 1.4rem;
@@ -145,4 +144,22 @@ main .countries .card .info p {
 }
 main .countries .card .info strong {
   font-weight: 600;
+}
+
+.light-theme header {
+  background: #fff;
+  color: #111517;
+}
+.light-theme header .theme button {
+  background: #fff;
+  color: #111517;
+}
+
+.dark-theme header {
+  background: #2b3945;
+  color: #fff;
+}
+.dark-theme header .theme button {
+  background: #2b3945;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
