@@ -138,3 +138,22 @@ main {
     }
   }
 }
+
+@mixin themeSwitch($theme-name, $theme, $cards, $input, $main) {
+}
+
+@include themeSwitch(
+  light-theme,
+  colors.$texts-light,
+  colors.$cards-light,
+  colors.$input-light,
+  colors.$main-light
+);
+
+@include themeSwitch(
+  dark-theme,
+  colors.$texts-dark,
+  colors.$cards-dark,
+  colors.$input-dark,
+  colors.$main-dark
+);
