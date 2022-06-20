@@ -151,6 +151,33 @@ main {
         }
       }
     }
+    main {
+      background: $main;
+
+      .search {
+        background: $cards;
+        color: $texts;
+
+        input {
+          background: $cards;
+          color: $texts;
+
+          &::placeholder {
+            color: $texts;
+          }
+        }
+      }
+
+      .options {
+        background: $cards;
+        color: $texts;
+      }
+
+      .card {
+        background: $cards;
+        color: $texts;
+      }
+    }
   }
 }
 
